@@ -8,13 +8,13 @@ import java.io.Serializable;
 public class SinhVien implements Serializable {
 
     @Id
-    @GeneratedValue()
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "HoVaTen")
+    @Column(name = "hovaten")
     private String hovaten;
 
-    @Column(name = "NamSinh")
+    @Column(name = "namsinh")
     private int namsinh;
 
     public SinhVien() {}
